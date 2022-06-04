@@ -5,7 +5,7 @@ export default function Button({ onClick }) {
     return (
         <div className={s.Container}>
             <button type="button" className={s.Button} onClick={onClick}>
-            Load more
+            Go back
            </button>
         </div>
         

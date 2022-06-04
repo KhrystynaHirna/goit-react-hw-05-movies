@@ -1,0 +1,32 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.item {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.img {
+  width: 100px;
+  height: auto;
+}
+
+.title {
+  color: blue;
+  margin: 0;
+  font-size: 14px;
+}
+
+.subTitle {
+  color: purple;
+  font-size: 12px;
+  margin: 0 0 15px 0;
+}
+
+.text {
+  font-size: 12px;
+  margin: 0;
+}
