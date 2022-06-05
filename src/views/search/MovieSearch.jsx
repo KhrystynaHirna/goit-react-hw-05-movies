@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import * as Api from '../../api/Api';
+import * as api from '../../api/Api';
 import s from './MovieSearch.module.css';
 import MovieList from 'components/movie/MovieList';
 
@@ -13,7 +13,7 @@ export default function MovieSearch() {
   const [query, setQuery] = useState('');
 
   function fetchMovies(query) {
-    Api.fetchSearchMovies(query).then(data => setSearchMovies(data.results));
+    api.fetchSearchMovies(query).then(data => setSearchMovies(data.results));
   }
 
   function onChange(event) {

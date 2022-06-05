@@ -7,7 +7,7 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import * as Api from '../../api/Api';
+import * as api from '../../api/Api';
 import s from './MovieInfo.module.css';
 import Button from 'components/button/Button';
 
@@ -38,7 +38,7 @@ export default function MovieInfo() {
   }
 
   useEffect(() => {
-    Api.fetchMoviesInfo(movieId).then(setMovie);
+    api.fetchMovieInfo(movieId).then(setMovie);
   }, [movieId]);
 
   return (
@@ -64,7 +64,7 @@ export default function MovieInfo() {
               state={{ from: location }}
               className={s.navItem}
               style={({ isActive }) => ({
-                color: isActive ? 'blue' : 'black',
+                color: isActive ? 'purple' : 'black',
               })}
             >
               Cast
@@ -74,7 +74,7 @@ export default function MovieInfo() {
               state={{ from: location }}
               className={s.navItem}
               style={({ isActive }) => ({
-                color: isActive ? 'blue' : 'black',
+                color: isActive ? 'purple' : 'black',
               })}
             >
               Reviews

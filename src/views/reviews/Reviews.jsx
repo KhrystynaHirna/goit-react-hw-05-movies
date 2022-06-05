@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import * as Api from '../../api/Api';
+import * as api from '../../api/Api';
 import s from './Reviews.module.css';
 
 export default function Reviews() {
@@ -8,7 +8,7 @@ export default function Reviews() {
   const { movieId } = useParams();
 
   useEffect(() => {
-    Api.fetchMoviesReviews(movieId).then(data => setReviews(data.results));
+    api.fetchMovieReviews(movieId).then(data => setReviews(data.results));
   }, [movieId]);
 
   return reviews.length === 0 ? (
