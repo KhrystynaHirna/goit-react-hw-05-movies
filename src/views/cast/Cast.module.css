@@ -10,18 +10,17 @@
 }
 
 .img {
-  width: 100px;
   height: auto;
 }
 
 .title {
-  color: blue;
+  color: rgb(174, 174, 218);
   margin: 0;
   font-size: 14px;
 }
 
 .subTitle {
-  color: purple;
+  color: rgb(156, 161, 125);
   font-size: 12px;
   margin: 0 0 15px 0;
 }

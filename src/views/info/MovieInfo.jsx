@@ -64,7 +64,7 @@ export default function MovieInfo() {
               state={{ from: location }}
               className={s.navItem}
               style={({ isActive }) => ({
-                color: isActive ? 'purple' : 'black',
+                color: isActive ? 'blue' : 'black',
               })}
             >
               Cast
@@ -74,7 +74,7 @@ export default function MovieInfo() {
               state={{ from: location }}
               className={s.navItem}
               style={({ isActive }) => ({
-                color: isActive ? 'purple' : 'black',
+                color: isActive ? 'blue' : 'black',
               })}
             >
               Reviews

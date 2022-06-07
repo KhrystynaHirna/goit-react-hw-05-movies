@@ -8,14 +8,14 @@ export default function Navigation() {
     <nav>
       <NavLink
         to="/"
-        style={({ isActive }) => ({ color: isActive ? 'blue' : 'black' })}
+        style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}
         className={s.link}
       >
         Home
       </NavLink>
       <NavLink
         to="/movies"
-        style={({ isActive }) => ({ color: isActive ? 'blue' : 'black' })}
+        style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}
         className={s.link}
       >
         Movies

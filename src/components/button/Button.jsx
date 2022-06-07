@@ -3,8 +3,8 @@ import s from "./Button.module.css";
 
 export default function Button({ onClick }) {
     return (
-        <div className={s.Container}>
-            <button type="button" className={s.Button} onClick={onClick}>
+        <div>
+            <button type="button" className={s.button} onClick={onClick}>
             Go back
            </button>
         </div>

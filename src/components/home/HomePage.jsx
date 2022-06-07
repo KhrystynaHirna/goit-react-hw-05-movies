@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import * as api from '../../api/Api';
 import MovieList from '../movie/MovieList';
-import s from './Home.module.css';
+import s from './HomePage.module.css';
 
-export default function Home() {
+export default function HomePage() {
   const [popularMovies, setPopularMovies] = useState([]);
 
   useEffect(() => {

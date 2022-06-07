@@ -9,8 +9,8 @@ const MovieInfo = lazy(() =>
 const MovieSearch = lazy(() =>
   import('../views/search/MovieSearch' /* webpackChunkName: "search-movies-view" */),
 );
-const Home = lazy(() =>
-  import('../components/home/Home' /* webpackChunkName: "home-view" */),
+const HomePage = lazy(() =>
+  import('../components/home/HomePage' /* webpackChunkName: "home-view" */),
 );
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
       <Header />
       <Suspense fallback={<div>Please wait...</div>}>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<HomePage/>}/>
           <Route path='/movies/:movieId/*' element={< MovieInfo />} />
           <Route path='/movies' element={< MovieSearch />} />
         </Routes>
