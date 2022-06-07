@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/reviews-view.d4b10db0.chunk.css","mappings":"AAAA,qBACE,eAAgB,CAChB,SACF,CAEA,sBACE,YACF,CAEA,qBACE,iBACF","sources":["views/reviews/Reviews.module.css"],"sourcesContent":[".list {\n  list-style: none;\n  padding: 0;\n}\n\n.title {\n  color: purple;\n}\n\n.text {\n  font-style: italic;\n}"],"names":[],"sourceRoot":""}
